@@ -9,7 +9,8 @@ import Checkbox from '@material-ui/core/Checkbox';
 import { toast } from 'react-toastify';
 import Fab from '@material-ui/core/Fab';
 
-import { Container, Form } from '../Form03/styles';
+import { Container, Form } from './styles';
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -224,6 +225,10 @@ export default function Potentials({ person, showForm }) {
     const result = parseFloat((2.5 * e.target.value).toFixed(2));
     setCpQtd(e.target.value);
     setCpResult(result);
+  }
+
+  function pdf(history) {
+    history.push('/pdf')
   }
 
   return (
@@ -1220,6 +1225,16 @@ export default function Potentials({ person, showForm }) {
             onClick={showForm}
           >
             Voltar
+          </Fab>
+
+          <Fab
+            variant="extended"
+            color="#333"
+            aria-label="add"
+            className={classes.margin}
+            onClick={pdf}
+          >
+            Gerar PDF
           </Fab>
         </div>
       </Form>

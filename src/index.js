@@ -5,9 +5,11 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 //import Information from './Information';
 //import Potentials from './Potentials'
-import CPO01 from '../src/CPO01'
+//import CPO02 from '../src/CPO02'
+import MyDocument from './CPP02/pdf'
 
-ReactDOM.render(<CPO01   />, document.getElementById('root'));
+ReactDOM.render(<MyDocument />, document.getElementById('root'));
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

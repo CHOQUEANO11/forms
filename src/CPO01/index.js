@@ -1307,7 +1307,7 @@ const handleChange = name => event => {
                       value={false}
                     />
                   }
-                  label="Demonstrou algumas vezses [0,50]"
+                  label="Demonstrou algumas vezes [0,50]"
                 />
                 <FormControlLabel
                   control={
